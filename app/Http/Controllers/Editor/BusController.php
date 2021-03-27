@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Editor;
 
 use App\Bus;
+use App\Company;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -27,7 +28,8 @@ class BusController extends Controller
      */
     public function create()
     {
-        return view('/Editor/pages/bus/create');
+        $data = Company::all();
+        return view('/Editor/pages/bus/create', compact('data'));
     }
 
     /**
@@ -66,6 +68,7 @@ class BusController extends Controller
             'WifiName' => $request->WifiName ?? 'Code',
             'WifiPass' => $request->WifiPass ?? 'code20208',
             'status' => $request->status ?? 'off',
+            'company_id' => $request->company_id ?? '1',
             'MemoryAdres' => $request->MemoryAdres ?? '25'
         );
 
@@ -92,8 +95,9 @@ class BusController extends Controller
      */
     public function edit($id)
     {
+        $company = Company::all();
         $data = Bus::findOrFail($id);
-        return view('/Editor/pages/bus/edit', compact('data'));
+        return view('/Editor/pages/bus/edit', compact('data','company'));
     }
 
     /**
@@ -131,6 +135,7 @@ class BusController extends Controller
                 'status' => $request->status ?? 'off',
                 'WifiName' => $request->WifiName ?? 'Code',
                 'WifiPass' => $request->WifiPass ?? 'code20208',
+                'company_id' => $request->company_id ?? '1',
                 'MemoryAdres' => $request->MemoryAdres ?? '25'
             );
         }
@@ -160,6 +165,7 @@ class BusController extends Controller
                 'WifiPass' => $request->WifiPass ?? 'code20208',
                 'password' => Hash::make($request->password),
                 'status' => $request->status ?? 'off',
+                'company_id' => $request->company_id ?? '1',
                 'MemoryAdres' => $request->MemoryAdres ?? '25'
             );
         }

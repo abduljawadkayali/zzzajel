@@ -175,6 +175,6 @@ class DeviceController extends Controller
         $data = Device::findOrFail($id);
         $data->delete();
         toast(__('Device Deleted Successfully'),'info');
-        return redirect()->route('bus.index');
+        return redirect()->route('device.index');
     }
 }
