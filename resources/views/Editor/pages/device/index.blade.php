@@ -11,6 +11,8 @@
     @lang("Devices")
 </h1>
     <hr>
+        <a href="{{ URL::to('device/create') }}" class="btn btn-success">@lang("Add Device")</a>
+           <hr>
         @if(count($devices) >0)
     <div class="table-responsive">
              <table class="table datatable table-bordered table-striped">
@@ -39,7 +41,7 @@
 
 <td>
 
-                    {!! Form::open(['method' => 'DELETE', 'route' => ['bus.destroy', $device->id] ]) !!}
+                    {!! Form::open(['method' => 'DELETE', 'route' => ['device.destroy', $device->id] ]) !!}
                        <a href="{{ URL::to('device/'.$device->id.'/edit') }}" class="btn btn-info pull-left" style="margin-right: 3px;">@lang("Edit")</a>
 
                     {!! Form::submit(__('Delete'), ['class' => 'btn btn-danger']) !!}
@@ -52,7 +54,7 @@
         </table>
     </div>
 @endif
-    <a href="{{ URL::to('device/create') }}" class="btn btn-success">@lang("Add Bus")</a>
+
 
 </div>
 <script>

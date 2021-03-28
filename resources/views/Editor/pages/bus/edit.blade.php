@@ -100,6 +100,21 @@
                         {{ Form::text('MemoryAdres', $data->MemoryAdres, array('class' => 'form-control')) }}
                     </div>
                 </div>
+                <div class="col-md-4 col-md-offset-2">
+                    <div class="form-group">
+                        @lang("Select Company:")
+                        <select name="company_id" class="form-control">
+
+                            <option value="{{$data->company_id}}">{{ $data->company->name }}</option>
+
+                            @foreach ($company as $key => $value)
+
+                                <option value="{{ $value->id }}">{{ $value->name }}</option>
+
+                            @endforeach
+                        </select>
+                    </div>
+                </div>
 
                 <div class="col-md-4 col-md-offset-2">
                     <br>
@@ -115,7 +130,7 @@
             <br>
             <div class="col-md-4 col-md-offset-2">
                 <div class="form-group">
-                    {{ Form::submit(__('Create Bus Account'), array('class' => 'btn btn-success btn-lg btn-block')) }}
+                    {{ Form::submit(__('update Bus Account'), array('class' => 'btn btn-success btn-lg btn-block')) }}
                     {{ Form::close() }}
                 </div>
             </div>

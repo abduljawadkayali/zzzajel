@@ -2,7 +2,7 @@
 
 <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/dist/css/ionicons.min.css">
 
     <!-- Theme style -->
     <link rel="stylesheet" href="/dist/css/adminlte.min.css">
@@ -13,18 +13,21 @@
     <!-- summernote -->
     <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.css">
     <!-- Google Font: Source Sans Pro -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-
-
+<!-- <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+-->
+<link rel="stylesheet" href="/dist/css/css.css"  >
 <!-- jQuery UI 1.11.4 -->
 
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-
+<link rel="stylesheet" href="/dist/css/buttons.bootstrap4.min.css"  >
+<link rel="stylesheet" href="/dist/css/jquery.dataTables.css"  >
 <script src="/plugins/jquery/jquery.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css"  >
+<link rel="stylesheet" href="/dist/css/sweetalert.min.css"  >
 
 <script src="/plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="/dist/js/jquery.validate.js"></script>
 
 
 
 
+    <link rel="stylesheet" href="/dist/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="/dist/css/buttons.dataTables.min.css">

@@ -17,6 +17,7 @@
 <!-- Sparkline -->
 <script src="/plugins/sparklines/sparkline.js"></script>
 
+
 <!-- FastClick -->
 <script src="/plugins/fastclick/fastclick.min.js"></script>
 <!-- jQuery Knob Chart -->
@@ -37,6 +38,21 @@
 <!-- AdminLTE for demo purposes -->
 <script src="/dist/js/demo.js"></script>
 <script type="text/javascript" charset="utf8" src="/dist/jquery.dataTables.js"></script>
+
+
+
+
+
+<script src="/dist/js/jszip.min.js"></script>
+<script src="/dist/js/pdfmake.min.js"></script>
+<script src="/dist/js/vfs_fonts.js"></script>
+<script src="/dist/js/jquery.dataTables.min.js"></script>
+<script src="/dist/js/dataTables.buttons.min.js"></script>
+<script src="/dist/js/buttons.html5.min.js"></script>
+<script src="/dist/js/buttons.print.min.js"></script>
+
+
+
 
 <script>
     $(function () {

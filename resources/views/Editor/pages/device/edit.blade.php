@@ -111,7 +111,7 @@
             <br>
             <div class="col-md-4 col-md-offset-2">
                 <div class="form-group">
-                    {{ Form::submit(__('Create Bus Account'), array('class' => 'btn btn-success btn-lg btn-block')) }}
+                    {{ Form::submit(__('Update device Account'), array('class' => 'btn btn-success btn-lg btn-block')) }}
                     {{ Form::close() }}
                 </div>
             </div>

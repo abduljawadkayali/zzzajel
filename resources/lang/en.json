@@ -1,0 +1,9 @@
+{
+    "Translate": "Translate",
+    "The name field is required.": "please enter the name filed.",
+    "The email field is required.": "Please enter the Email field",
+    "The password field is required.": "Please Enter The password",
+    "validation.min.string": "Password must be more than 6 charachter",
+    "The password field must be confirmed": "Please Confirm Your Password",
+    "validation.unique": "Please Use UnRecorded Email"
+}
