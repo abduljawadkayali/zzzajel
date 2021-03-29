@@ -19,12 +19,19 @@ Route::get('logindash', 'logindash@index');
 Route::get('/about', 'HomeController@about');
 
 Route::get('/services', 'HomeController@services');
+Route::get('/work', 'HomeController@work');
 
 Route::get('/contactus', 'HomeController@contactus');
 
 Route::get('lang/{lang}', ['as' => 'lang.switch', 'uses' => 'LanguageController@switchLang']);
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('post/{id}', 'HomeController@post');
+Route::get('lines/{id}', 'HomeController@line');
+Route::get('journeis/{id}', 'HomeController@journy');
+
+Route::get('aboutus', 'HomeController@about');
 
 Auth::routes();
 
@@ -79,6 +86,20 @@ Route::resource('bus','Editor\BusController');
     Route::resource('balance','Editor\BalanceController');
 
     Route::resource('payment','Editor\PaymentController');
-
+    Route::post('payment/save', 'Editor\PaymentController@save');
     Route::resource('odeme','Editor\OdemeController');
+
+
+    Route::resource('StudentBalance','Editor\StudentBalanceController');
+
+    Route::resource('journey','Pages\JorneyController');
+
+    Route::resource('line','Pages\LineController');
+
+    Route::resource('memory','Editor\ChangeDeviceMemoryController');
+
+
+    Route::post('odeme/save', 'Editor\OdemeController@save');
+
+    Route::get('odeme/getbalance/{id}', 'Editor\OdemeController@getbalance');
 });
