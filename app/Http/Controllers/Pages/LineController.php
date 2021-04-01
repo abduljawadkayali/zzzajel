@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class LineController extends Controller
 {
+    public function __construct() {
+        $this->middleware('permission:Designer');
+        //
+    }
     /**
      * Display a listing of the resource.
      *

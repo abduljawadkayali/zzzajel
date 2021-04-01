@@ -8,6 +8,10 @@ use Illuminate\Http\Request;
 
 class JorneyController extends Controller
 {
+    public function __construct() {
+        $this->middleware('permission:Designer');
+        //
+    }
     /**
      * Display a listing of the resource.
      *
