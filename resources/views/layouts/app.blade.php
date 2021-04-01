@@ -9,7 +9,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@lang("zajel")</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -45,7 +45,7 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <li>  <a class="navbar-brand " href="{{ url('/') }}">
-                                @lang("Kaf")
+                                @lang("zajel")
                             </a>
                         </li>
                     </ul>
