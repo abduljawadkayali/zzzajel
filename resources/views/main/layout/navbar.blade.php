@@ -11,7 +11,7 @@
     <!-- Title -->
     <title>@lang("Zajel")</title>
     <!-- Favicon -->
-    <link rel="icon" href="/main/img/core-img/favicon.ico">
+    <link rel="icon" href="/main/img/core-img/LOGO.png">
 
     <script src="/main/js/jquery/jquery-2.2.4.min.js"></script>
 
@@ -26,7 +26,7 @@
 <!-- Preloader -->
 <div class="container-fluid">
     <div class="row">
-        <div class="col-10"  >
+        <div class="col-12"  >
             <div class="top-contact-info d-flex align-items-center">
                 <div class="news red">
                     <span><i class="fas fa-bolt"></i> </span>
@@ -43,11 +43,7 @@
             </div>
 
         </div>
-        <div class="col-2" >
-            <div class="logo">
-                <a href="/main/index.html"><img src="/main/img/core-img/logo.jpg" alt=""></a>
-            </div>
-        </div>
+
     </div></div>
 <div class="preloader d-flex align-items-center justify-content-center">
     <div class="lds-ellipsis">
