@@ -9,7 +9,7 @@ class ContactController extends Controller
 {
 
     public function __construct() {
-      //  $this->middleware('permission:Designer')->except(['store']);
+      $this->middleware('permission:Designer')->except(['store']);
         //
     }
     /**

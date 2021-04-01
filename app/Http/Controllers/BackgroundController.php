@@ -10,7 +10,7 @@ class BackgroundController extends Controller
 {
 
     public function __construct() {
-    //    $this->middleware('permission:Designer');
+       $this->middleware('permission:Designer');
         //
     }
     /**

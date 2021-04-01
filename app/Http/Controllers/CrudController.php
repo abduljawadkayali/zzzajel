@@ -9,7 +9,7 @@ use RealRashid\SweetAlert\Facades\Alert;
 class CrudController extends Controller
 {
     public function __construct() {
-     //   $this->middleware('permission:Designer');
+     $this->middleware('permission:Designer');
         //
     }
     /**

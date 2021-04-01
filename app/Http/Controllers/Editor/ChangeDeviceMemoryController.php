@@ -9,6 +9,11 @@ use Illuminate\Http\Request;
 
 class ChangeDeviceMemoryController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('permission:Editor');
+        //
+    }
     /**
      * Display a listing of the resource.
      *

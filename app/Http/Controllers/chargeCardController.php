@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class chargeCardController extends Controller
 {
+    public function __construct() {
+        $this->middleware('permission:Designer');
+        //
+    }
   /**
      * Display a listing of the resource.
      *
@@ -33,8 +37,8 @@ class chargeCardController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    { 
-      // $dt = Carbon::now(); 
+    {
+      // $dt = Carbon::now();
         //$data = array('balance' => 52525  );
       //  $data['time'] = '2020-10-02';
        $mytime = \Carbon\Carbon::now(+2);
@@ -42,9 +46,9 @@ class chargeCardController extends Controller
       if($request['id'] == "V155"){ ///device id
           return array(
                 'b' => 150, //max number is 9999
-                'e'   => "2021-01-18 33:36:52" 
+                'e'   => "2021-01-18 33:36:52"
                );
-      } 
+      }
       else if($request['id'] == "6344F814"){  ///card id
           return array(
                 'b' => 202, //max number is 9999
@@ -56,7 +60,7 @@ class chargeCardController extends Controller
       }
      //  dd($request);
  // $request['name'] = "post";
-       //return "ATCSQ"; 
+       //return "ATCSQ";
           return $request;
     }
 
@@ -68,7 +72,7 @@ class chargeCardController extends Controller
      */
     public function show($id)
     {
-       
+
           return response("2");
     }
 
@@ -84,7 +88,7 @@ class chargeCardController extends Controller
         $data = "AT";
          // return "AAA";
        //  return $id;
-         
+
           return response("edit");
     }
 
@@ -97,7 +101,7 @@ class chargeCardController extends Controller
      */
     public function update(Request $request, $id)
     {
-       
+
     }
 
     /**

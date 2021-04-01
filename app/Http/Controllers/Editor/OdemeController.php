@@ -10,6 +10,11 @@ use Illuminate\Http\Request;
 
 class OdemeController extends Controller
 {
+
+    public function __construct() {
+        $this->middleware('permission:Editor');
+        //
+    }
     /**
      * Display a listing of the resource.
      *
