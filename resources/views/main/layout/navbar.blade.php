@@ -197,9 +197,17 @@
                 </div>
             </div>
 
+<hr>
+            <div style="text-align: center!important; padding-right: 40%!important;size: 22px!important; color: white">
+                <strong>
+                @lang("All rights reserved.")
+                    &copy; @lang("zajel")
+ _
+                   <a  style="color: white" href="/">@lang("kayali")</a>  </strong>
+
+            </div>
         </div>
     </div>
-
 </footer>
 <!-- ##### Footer Area Start ##### -->
 <style>
