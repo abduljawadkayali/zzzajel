@@ -12,7 +12,13 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::resource('takip', 'takipController');
 
+Route::resource('confgDevice', 'ConfgController');
+
+Route::resource('chargeCard', 'chargeCardController');
+
+Route::get('ttakip/{id}', 'takipController@edit');
 Route::get('/', 'HomeController@index');
 Route::get('logindash', 'logindash@index');
 
